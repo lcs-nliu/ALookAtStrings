@@ -141,7 +141,11 @@ print("Second last character is: \(secondLast)")
  */
 // This will separate the output from the examples above from your work
 print("===== Exercise 1 begins =====")
-
+let name = "Nicole Liu"
+// Iterate each character of the string
+for singleCharacter in name {
+    print (singleCharacter)
+}
 
 
 /*:
@@ -157,9 +161,14 @@ print("===== Exercise 2 begins =====")
 
 // Create a string
 let aQuestion = "请问现在几点了?"
-
 // Write code to complete the exercise below...
-
+index = aQuestion.index (aQuestion.startIndex, offsetBy: 3)
+let zai = aQuestion[index]
+print ("The single character we are trying to print is \(zai)")
+print ("=================")
+index = aQuestion.index (aQuestion.endIndex, offsetBy: -5)
+let zaiSecondTry = aQuestion[index]
+print ("We are trying to print \(zaiSecondTry) again.")
 /*:
 ### Exercise 3
 
